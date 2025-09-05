@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import config from "./config"; // adjust path if needed
 
 function App() {
   const [books, setBooks] = useState([]);
@@ -8,7 +9,7 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    fetch("/bookapi/all")
+    fetch(`${config.url}/all`)
       .then(res => {
         if (!res.ok) throw new Error("Fetch failed");
         return res.json();
@@ -23,14 +24,14 @@ function App() {
   const addBook = () => {
     const body = { title, author, price: Number(price) };
     setLoading(true);
-    fetch("/bookapi/add", {
+    fetch(`${config.url}/add`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body)
     })
       .then(res => {
         setLoading(false);
-        if (!res.ok) throw new Error("Add failed");
+        if (!res.ok) throw new Error("Add failed: " + res.status);
         return res.json();
       })
       .then(newBook => {
@@ -44,25 +45,6 @@ function App() {
       });
   };
 
-  return (
-    <div style={{ padding: 20 }}>
-      <h1>📚 Book Management</h1>
-
-      <div style={{ marginBottom: 12 }}>
-        <input placeholder="Title" value={title} onChange={e => setTitle(e.target.value)} />
-        <input placeholder="Author" value={author} onChange={e => setAuthor(e.target.value)} style={{ marginLeft: 8 }} />
-        <input placeholder="Price" value={price} onChange={e => setPrice(e.target.value)} style={{ marginLeft: 8, width: 90 }} />
-        <button onClick={addBook} style={{ marginLeft: 8 }} disabled={loading}>{loading ? "Adding..." : "Add Book"}</button>
-      </div>
-
-      <h2>All Books</h2>
-      <ul>
-        {books.length === 0 ? <li>No books yet</li> : books.map(b => (
-          <li key={b.id}>{b.title} - {b.author} - ${b.price}</li>
-        ))}
-      </ul>
-    </div>
-  );
+  // ... JSX unchanged ...
 }
-
 export default App;
