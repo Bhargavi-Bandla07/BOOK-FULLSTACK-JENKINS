@@ -91,3 +91,24 @@ END
 
 !ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-05 23:41:26.914
 !MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 00:22:21.776
+!MESSAGE Classpath changed for project: BOOKAPI-SPRINGBOOT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 00:23:59.067
+!MESSAGE Classpath changed for project: BOOKAPI-SPRINGBOOT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 00:24:00.921
+!MESSAGE Classpath changed for project: BOOKAPI-SPRINGBOOT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 00:24:01.762
+!MESSAGE Classpath changed for project: BOOKAPI-SPRINGBOOT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 00:24:17.368
+!MESSAGE Classpath changed for project: BOOKAPI-SPRINGBOOT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 00:32:27.022
+!MESSAGE Classpath changed for project: BOOKAPI-SPRINGBOOT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 00:32:58.630
+!MESSAGE Classpath changed for project: BOOKAPI-SPRINGBOOT
