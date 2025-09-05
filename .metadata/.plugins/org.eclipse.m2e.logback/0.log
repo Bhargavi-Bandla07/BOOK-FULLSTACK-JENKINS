@@ -600,3 +600,9 @@ org.apache.maven.project.ProjectBuildingException: Some problems were encountere
 2025-09-06 03:24:33,038 [Worker-163: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\BOOK-FULLSTACK\BOOKAPI-SPRINGBOOT\src\test\resources
 2025-09-06 03:24:33,038 [Worker-163: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of BOOKAPI-SPRINGBOOT
 2025-09-06 03:24:33,038 [Worker-163: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for BOOKAPI-SPRINGBOOT
+2025-09-06 03:43:01,899 [Worker-167: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-06 03:43:01,908 [Worker-167: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-06 03:43:01,911 [Worker-167: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\BOOK-FULLSTACK\BOOKAPI-SPRINGBOOT\src\test\resources
+2025-09-06 03:47:42,230 [Worker-175: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-06 03:47:42,241 [Worker-175: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-06 03:47:42,244 [Worker-175: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\BOOK-FULLSTACK\BOOKAPI-SPRINGBOOT\src\test\resources
