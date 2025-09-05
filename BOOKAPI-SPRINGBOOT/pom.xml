@@ -18,7 +18,7 @@
   <name>BOOKAPI-SPRINGBOOT</name>
   <description>Book API using Spring Boot</description>
 
-  <!-- IMPORTANT: produce a WAR -->
+  <!-- produce a WAR -->
   <packaging>war</packaging>
 
   <properties>
@@ -26,13 +26,13 @@
   </properties>
 
   <dependencies>
-    <!-- JPA -->
+    <!-- Spring Data JPA -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-jpa</artifactId>
     </dependency>
 
-    <!-- Web (keeps embedded Tomcat but we will mark provided) -->
+    <!-- Spring Web -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
@@ -45,14 +45,14 @@
       <scope>runtime</scope>
     </dependency>
 
-    <!-- Tomcat provided for running in external Tomcat -->
+    <!-- Provided Tomcat (external container) -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-tomcat</artifactId>
       <scope>provided</scope>
     </dependency>
 
-    <!-- Tests -->
+    <!-- Test -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
@@ -61,11 +61,23 @@
   </dependencies>
 
   <build>
+    <finalName>bookapi</finalName> <!-- produces bookapi.war in target/ -->
     <plugins>
-      <!-- spring boot maven plugin - keeps packaging convenience -->
+      <!-- Spring Boot Maven plugin -->
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+
+      <!-- Ensure Java 17 compile level -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.10.1</version>
+        <configuration>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
+        </configuration>
       </plugin>
     </plugins>
   </build>
