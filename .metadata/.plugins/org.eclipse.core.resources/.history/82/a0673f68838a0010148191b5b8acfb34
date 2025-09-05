@@ -1,0 +1,7 @@
+spring.application.name=BOOKAPI-SPRINGBOOT
+spring.datasource.url=jdbc:mysql://localhost:3306/bookdb
+spring.datasource.username=root
+spring.datasource.password=yourpassword
+spring.jpa.hibernate.ddl-auto=update
+spring.application.name=BOOKAPI-SPRINGBOOT
+server.port=8081
