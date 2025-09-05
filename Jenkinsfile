@@ -1,9 +1,11 @@
 pipeline {
   agent any
-
+tools {
+        maven 'MAVEN' // This matches the name in Manage Jenkins → Tools
+    }
   environment {
     TOMCAT_HOME = "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1"
-    BACKEND_WAR_NAME = "bookapi.war"
+    BACKEND_WAR_NAME = "bookapi"
     FRONTEND_APP_NAME = "bookreactapi"
   }
 
