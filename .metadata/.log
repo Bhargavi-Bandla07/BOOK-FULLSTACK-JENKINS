@@ -112,3 +112,926 @@ END
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 00:32:58.630
 !MESSAGE Classpath changed for project: BOOKAPI-SPRINGBOOT
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-06 01:18:05.193
+!MESSAGE -2
+!STACK 0
+org.eclipse.jface.text.BadLocationException: -2
+	at org.eclipse.jface.text.TreeLineTracker.nodeByLine(TreeLineTracker.java:302)
+	at org.eclipse.jface.text.TreeLineTracker.getLineLength(TreeLineTracker.java:1106)
+	at org.eclipse.jface.text.AbstractLineTracker.getLineLength(AbstractLineTracker.java:240)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.getLineLength(BasicStructuredDocument.java:1486)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getLineLength(LSPEclipseUtils.java:223)
+	at org.eclipse.lsp4e.LSPEclipseUtils.toOffset(LSPEclipseUtils.java:216)
+	at org.eclipse.lsp4e.operations.diagnostics.LSPDiagnosticsToMarkers.lambda$1(LSPDiagnosticsToMarkers.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.eclipse.lsp4e.operations.diagnostics.LSPDiagnosticsToMarkers.updateEditorAnnotations(LSPDiagnosticsToMarkers.java:130)
+	at org.eclipse.lsp4e.operations.diagnostics.LSPDiagnosticsToMarkers.accept(LSPDiagnosticsToMarkers.java:108)
+	at org.eclipse.lsp4e.operations.diagnostics.LSPDiagnosticsToMarkers.accept(LSPDiagnosticsToMarkers.java:1)
+	at org.eclipse.lsp4e.LanguageClientImpl.publishDiagnostics(LanguageClientImpl.java:103)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:356)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:18:15.464
+!MESSAGE Classpath changed for project: BOOKAPI-SPRINGBOOT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:18:15.465
+!MESSAGE Boot project REMOVED: BOOKAPI-SPRINGBOOT
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-09-06 01:19:31.165
+!MESSAGE Could not get hover region due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:152)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:225)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4124)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3712)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-06 01:19:31.187
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:73)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-06 01:19:31.694
+!MESSAGE -2
+!STACK 0
+org.eclipse.jface.text.BadLocationException: -2
+	at org.eclipse.jface.text.TreeLineTracker.nodeByLine(TreeLineTracker.java:302)
+	at org.eclipse.jface.text.TreeLineTracker.getLineLength(TreeLineTracker.java:1106)
+	at org.eclipse.jface.text.AbstractLineTracker.getLineLength(AbstractLineTracker.java:240)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.getLineLength(BasicStructuredDocument.java:1486)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getLineLength(LSPEclipseUtils.java:223)
+	at org.eclipse.lsp4e.LSPEclipseUtils.toOffset(LSPEclipseUtils.java:216)
+	at org.eclipse.lsp4e.operations.diagnostics.LSPDiagnosticsToMarkers.lambda$1(LSPDiagnosticsToMarkers.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.eclipse.lsp4e.operations.diagnostics.LSPDiagnosticsToMarkers.updateEditorAnnotations(LSPDiagnosticsToMarkers.java:130)
+	at org.eclipse.lsp4e.operations.diagnostics.LSPDiagnosticsToMarkers.accept(LSPDiagnosticsToMarkers.java:108)
+	at org.eclipse.lsp4e.operations.diagnostics.LSPDiagnosticsToMarkers.accept(LSPDiagnosticsToMarkers.java:1)
+	at org.eclipse.lsp4e.LanguageClientImpl.publishDiagnostics(LanguageClientImpl.java:103)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:356)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-06 01:19:32.517
+!MESSAGE -2
+!STACK 0
+org.eclipse.jface.text.BadLocationException: -2
+	at org.eclipse.jface.text.TreeLineTracker.nodeByLine(TreeLineTracker.java:302)
+	at org.eclipse.jface.text.TreeLineTracker.getLineLength(TreeLineTracker.java:1106)
+	at org.eclipse.jface.text.AbstractLineTracker.getLineLength(AbstractLineTracker.java:240)
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.getLineLength(BasicStructuredDocument.java:1486)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getLineLength(LSPEclipseUtils.java:223)
+	at org.eclipse.lsp4e.LSPEclipseUtils.toOffset(LSPEclipseUtils.java:216)
+	at org.eclipse.lsp4e.operations.diagnostics.LSPDiagnosticsToMarkers.lambda$1(LSPDiagnosticsToMarkers.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.eclipse.lsp4e.operations.diagnostics.LSPDiagnosticsToMarkers.updateEditorAnnotations(LSPDiagnosticsToMarkers.java:130)
+	at org.eclipse.lsp4e.operations.diagnostics.LSPDiagnosticsToMarkers.accept(LSPDiagnosticsToMarkers.java:108)
+	at org.eclipse.lsp4e.operations.diagnostics.LSPDiagnosticsToMarkers.accept(LSPDiagnosticsToMarkers.java:1)
+	at org.eclipse.lsp4e.LanguageClientImpl.publishDiagnostics(LanguageClientImpl.java:103)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:356)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-06 01:22:22.586
+!MESSAGE Failed to read Maven project: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-06 01:22:27.167
+!MESSAGE Failed to read Maven project: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-06 01:23:29.115
+!MESSAGE Failed to read Maven project: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-06 01:24:24.965
+!MESSAGE Failed to read Maven project: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-06 01:26:19.740
+!MESSAGE Failed to read Maven project: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-06 01:32:20.618
+!MESSAGE Failed to read Maven project: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-06 01:34:48.726
+!MESSAGE Failed to read Maven project: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-06 01:36:15.459
+!MESSAGE Failed to read Maven project: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-06 01:39:16.422
+!MESSAGE Failed to read Maven project: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:57:59.973
+!MESSAGE Classpath changed for project: HikariCP-6.3.2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.086
+!MESSAGE Classpath changed for project: angus-activation-2.0.2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.093
+!MESSAGE Classpath changed for project: antlr4-runtime-4.13.0
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.107
+!MESSAGE Classpath changed for project: aspectjweaver-1.9.24
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.109
+!MESSAGE Classpath changed for project: bookapi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.117
+!MESSAGE Boot project ADDED: bookapi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.118
+!MESSAGE Classpath changed for project: byte-buddy-1.17.7
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.119
+!MESSAGE Classpath changed for project: classmate-1.7.0
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.121
+!MESSAGE Classpath changed for project: hibernate-commons-annotations-7.0.3.Final
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.123
+!MESSAGE Classpath changed for project: hibernate-core-6.6.26.Final
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.127
+!MESSAGE Classpath changed for project: istack-commons-runtime-4.1.2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.128
+!MESSAGE Classpath changed for project: jackson-annotations-2.19.2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.132
+!MESSAGE Classpath changed for project: jackson-core-2.19.2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.136
+!MESSAGE Classpath changed for project: jackson-databind-2.19.2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.137
+!MESSAGE Classpath changed for project: jackson-datatype-jdk8-2.19.2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.138
+!MESSAGE Classpath changed for project: jackson-datatype-jsr310-2.19.2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.140
+!MESSAGE Classpath changed for project: jackson-module-parameter-names-2.19.2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.142
+!MESSAGE Classpath changed for project: jakarta.activation-api-2.1.3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.143
+!MESSAGE Classpath changed for project: jakarta.annotation-api-2.1.1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.144
+!MESSAGE Classpath changed for project: jakarta.inject-api-2.0.1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.146
+!MESSAGE Classpath changed for project: jakarta.persistence-api-3.1.0
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.147
+!MESSAGE Classpath changed for project: jakarta.transaction-api-2.0.1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.152
+!MESSAGE Classpath changed for project: jakarta.xml.bind-api-4.0.2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.156
+!MESSAGE Classpath changed for project: jandex-3.2.0
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.164
+!MESSAGE Classpath changed for project: jaxb-core-4.0.5
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.173
+!MESSAGE Classpath changed for project: jaxb-runtime-4.0.5
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.175
+!MESSAGE Classpath changed for project: jboss-logging-3.6.1.Final
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.178
+!MESSAGE Classpath changed for project: jul-to-slf4j-2.0.17
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.180
+!MESSAGE Classpath changed for project: log4j-api-2.24.3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.184
+!MESSAGE Classpath changed for project: log4j-to-slf4j-2.24.3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.191
+!MESSAGE Classpath changed for project: logback-classic-1.5.18
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.196
+!MESSAGE Classpath changed for project: logback-core-1.5.18
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.198
+!MESSAGE Classpath changed for project: micrometer-commons-1.15.3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.205
+!MESSAGE Classpath changed for project: micrometer-observation-1.15.3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.206
+!MESSAGE Classpath changed for project: mysql-connector-j-9.4.0
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.207
+!MESSAGE Classpath changed for project: slf4j-api-2.0.17
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.210
+!MESSAGE Classpath changed for project: snakeyaml-2.4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.212
+!MESSAGE Classpath changed for project: spring-aop-6.2.10
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.216
+!MESSAGE Classpath changed for project: spring-aspects-6.2.10
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.220
+!MESSAGE Classpath changed for project: spring-beans-6.2.10
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.221
+!MESSAGE Classpath changed for project: spring-boot-3.5.5
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.222
+!MESSAGE Classpath changed for project: spring-boot-autoconfigure-3.5.5
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.223
+!MESSAGE Classpath changed for project: spring-boot-jarmode-tools-3.5.5
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.224
+!MESSAGE Classpath changed for project: spring-context-6.2.10
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.225
+!MESSAGE Classpath changed for project: spring-core-6.2.10
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.226
+!MESSAGE Classpath changed for project: spring-data-commons-3.5.3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.227
+!MESSAGE Classpath changed for project: spring-data-jpa-3.5.3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.228
+!MESSAGE Classpath changed for project: spring-expression-6.2.10
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.229
+!MESSAGE Classpath changed for project: spring-jcl-6.2.10
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.233
+!MESSAGE Classpath changed for project: spring-jdbc-6.2.10
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.234
+!MESSAGE Classpath changed for project: spring-orm-6.2.10
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.236
+!MESSAGE Classpath changed for project: spring-tx-6.2.10
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.237
+!MESSAGE Classpath changed for project: spring-web-6.2.10
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.238
+!MESSAGE Classpath changed for project: spring-webmvc-6.2.10
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 01:58:00.240
+!MESSAGE Classpath changed for project: txw2-4.0.5
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-06 01:58:00.507
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-06 01:58:00.509
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-06 01:58:00.512
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-06 01:58:00.515
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-06 01:58:00.532
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-06 01:58:00.541
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-09-06 01:58:10.473
+!MESSAGE LanguageServer not initialized within 10s
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.LanguageServerWrapper.getServerCapabilities(LanguageServerWrapper.java:924)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.capabilitiesComply(LanguageServiceAccessor.java:203)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getStartedWrappers(LanguageServiceAccessor.java:412)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getStartedWrappers(LanguageServiceAccessor.java:399)
+	at org.eclipse.lsp4e.LanguageServers$LanguageServerProjectExecutor.getServers(LanguageServers.java:331)
+	at org.eclipse.lsp4e.LanguageServers.executeOnServers(LanguageServers.java:421)
+	at org.eclipse.lsp4e.LanguageServers.computeFirst(LanguageServers.java:168)
+	at org.eclipse.lsp4e.LanguageServers.computeFirst(LanguageServers.java:144)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:29)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-09-06 01:58:12.476
+!MESSAGE executing callback sts4.classpath.CjbhrxgW FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2025-09-06 01:58:12.477
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:31)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-06 01:58:14.613
+!MESSAGE Failed to read Maven project: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-09-06 01:59:08.049
+!MESSAGE Failed to read Maven project: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+!STACK 0
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 02:01:41.342
+!MESSAGE Classpath changed for project: BOOKAPI-SPRINGBOOT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 02:01:41.361
+!MESSAGE Boot project ADDED: BOOKAPI-SPRINGBOOT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 02:01:41.466
+!MESSAGE Classpath changed for project: BOOKAPI-SPRINGBOOT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 02:01:44.820
+!MESSAGE Classpath changed for project: BOOKAPI-SPRINGBOOT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 02:01:46.704
+!MESSAGE Classpath changed for project: BOOKAPI-SPRINGBOOT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 02:01:54.766
+!MESSAGE Classpath changed for project: BOOKAPI-SPRINGBOOT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:19:16.131
+!MESSAGE Classpath changed for project: angus-activation-2.0.2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:19:16.648
+!MESSAGE Classpath changed for project: bookapi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:19:24.160
+!MESSAGE Classpath changed for project: antlr4-runtime-4.13.0
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:19:24.478
+!MESSAGE Classpath changed for project: bookapi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:19:30.972
+!MESSAGE Classpath changed for project: aspectjweaver-1.9.24
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:19:31.342
+!MESSAGE Classpath changed for project: bookapi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:19:36.814
+!MESSAGE Classpath changed for project: bookapi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:19:36.815
+!MESSAGE Boot project REMOVED: bookapi
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:20:43.729
+!MESSAGE Classpath changed for project: byte-buddy-1.17.7
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:24:20.118
+!MESSAGE Classpath changed for project: classmate-1.7.0
+
+!ENTRY org.eclipse.core.resources 2 2 2025-09-06 03:24:20.409
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.409
+!MESSAGE The project description file (.project) for 'HikariCP-6.3.2' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.409
+!MESSAGE The project description file (.project) for 'hibernate-commons-annotations-7.0.3.Final' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.409
+!MESSAGE The project description file (.project) for 'hibernate-core-6.6.26.Final' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.409
+!MESSAGE The project description file (.project) for 'istack-commons-runtime-4.1.2' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.409
+!MESSAGE The project description file (.project) for 'jackson-annotations-2.19.2' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.409
+!MESSAGE The project description file (.project) for 'jackson-core-2.19.2' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.409
+!MESSAGE The project description file (.project) for 'jackson-databind-2.19.2' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.409
+!MESSAGE The project description file (.project) for 'jackson-datatype-jdk8-2.19.2' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.409
+!MESSAGE The project description file (.project) for 'jackson-datatype-jsr310-2.19.2' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.409
+!MESSAGE The project description file (.project) for 'jackson-module-parameter-names-2.19.2' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.409
+!MESSAGE The project description file (.project) for 'jakarta.activation-api-2.1.3' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.409
+!MESSAGE The project description file (.project) for 'jakarta.annotation-api-2.1.1' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.409
+!MESSAGE The project description file (.project) for 'jakarta.inject-api-2.0.1' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.409
+!MESSAGE The project description file (.project) for 'jakarta.persistence-api-3.1.0' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.409
+!MESSAGE The project description file (.project) for 'jakarta.transaction-api-2.0.1' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.409
+!MESSAGE The project description file (.project) for 'jakarta.xml.bind-api-4.0.2' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.409
+!MESSAGE The project description file (.project) for 'jandex-3.2.0' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.409
+!MESSAGE The project description file (.project) for 'jaxb-core-4.0.5' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.409
+!MESSAGE The project description file (.project) for 'jaxb-runtime-4.0.5' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.409
+!MESSAGE The project description file (.project) for 'jboss-logging-3.6.1.Final' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.409
+!MESSAGE The project description file (.project) for 'jul-to-slf4j-2.0.17' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.409
+!MESSAGE The project description file (.project) for 'log4j-api-2.24.3' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.409
+!MESSAGE The project description file (.project) for 'log4j-to-slf4j-2.24.3' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.409
+!MESSAGE The project description file (.project) for 'logback-classic-1.5.18' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.409
+!MESSAGE The project description file (.project) for 'logback-core-1.5.18' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.409
+!MESSAGE The project description file (.project) for 'micrometer-commons-1.15.3' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.409
+!MESSAGE The project description file (.project) for 'micrometer-observation-1.15.3' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.409
+!MESSAGE The project description file (.project) for 'mysql-connector-j-9.4.0' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.410
+!MESSAGE The project description file (.project) for 'slf4j-api-2.0.17' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.410
+!MESSAGE The project description file (.project) for 'snakeyaml-2.4' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.410
+!MESSAGE The project description file (.project) for 'spring-aop-6.2.10' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.410
+!MESSAGE The project description file (.project) for 'spring-aspects-6.2.10' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.410
+!MESSAGE The project description file (.project) for 'spring-beans-6.2.10' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.410
+!MESSAGE The project description file (.project) for 'spring-boot-3.5.5' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.410
+!MESSAGE The project description file (.project) for 'spring-boot-autoconfigure-3.5.5' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.410
+!MESSAGE The project description file (.project) for 'spring-boot-jarmode-tools-3.5.5' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.410
+!MESSAGE The project description file (.project) for 'spring-context-6.2.10' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.410
+!MESSAGE The project description file (.project) for 'spring-core-6.2.10' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.410
+!MESSAGE The project description file (.project) for 'spring-data-commons-3.5.3' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.410
+!MESSAGE The project description file (.project) for 'spring-data-jpa-3.5.3' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.410
+!MESSAGE The project description file (.project) for 'spring-expression-6.2.10' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.410
+!MESSAGE The project description file (.project) for 'spring-jcl-6.2.10' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.410
+!MESSAGE The project description file (.project) for 'spring-jdbc-6.2.10' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.410
+!MESSAGE The project description file (.project) for 'spring-orm-6.2.10' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.410
+!MESSAGE The project description file (.project) for 'spring-tx-6.2.10' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.410
+!MESSAGE The project description file (.project) for 'spring-web-6.2.10' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.410
+!MESSAGE The project description file (.project) for 'spring-webmvc-6.2.10' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-09-06 03:24:20.410
+!MESSAGE The project description file (.project) for 'txw2-4.0.5' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:24:32.616
+!MESSAGE Classpath changed for project: BOOKAPI-SPRINGBOOT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:24:55.096
+!MESSAGE Classpath changed for project: txw2-4.0.5
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:25:06.368
+!MESSAGE Classpath changed for project: spring-webmvc-6.2.10
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:25:13.670
+!MESSAGE Classpath changed for project: spring-boot-3.5.5
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:25:22.333
+!MESSAGE Classpath changed for project: snakeyaml-2.4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:25:31.704
+!MESSAGE Classpath changed for project: slf4j-api-2.0.17
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:25:39.567
+!MESSAGE Classpath changed for project: micrometer-commons-1.15.3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:25:46.485
+!MESSAGE Classpath changed for project: jboss-logging-3.6.1.Final
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:25:54.714
+!MESSAGE Classpath changed for project: logback-core-1.5.18
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:26:03.498
+!MESSAGE Classpath changed for project: logback-classic-1.5.18
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:26:13.164
+!MESSAGE Classpath changed for project: hibernate-core-6.6.26.Final
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:26:21.119
+!MESSAGE Classpath changed for project: jackson-core-2.19.2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:26:29.351
+!MESSAGE Classpath changed for project: istack-commons-runtime-4.1.2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:26:36.620
+!MESSAGE Classpath changed for project: jackson-databind-2.19.2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:26:42.133
+!MESSAGE Classpath changed for project: jackson-datatype-jdk8-2.19.2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:26:47.099
+!MESSAGE Classpath changed for project: jakarta.annotation-api-2.1.1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:26:54.688
+!MESSAGE Classpath changed for project: jackson-datatype-jsr310-2.19.2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:27:01.998
+!MESSAGE Classpath changed for project: jakarta.transaction-api-2.0.1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:27:10.812
+!MESSAGE Classpath changed for project: jakarta.activation-api-2.1.3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:27:17.205
+!MESSAGE Classpath changed for project: jandex-3.2.0
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:27:22.816
+!MESSAGE Classpath changed for project: jakarta.xml.bind-api-4.0.2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:27:28.746
+!MESSAGE Classpath changed for project: jakarta.persistence-api-3.1.0
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:27:34.482
+!MESSAGE Classpath changed for project: jul-to-slf4j-2.0.17
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:27:40.726
+!MESSAGE Classpath changed for project: jakarta.inject-api-2.0.1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:27:45.872
+!MESSAGE Classpath changed for project: jaxb-core-4.0.5
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:27:57.451
+!MESSAGE Classpath changed for project: spring-aop-6.2.10
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:28:03.205
+!MESSAGE Classpath changed for project: jaxb-runtime-4.0.5
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:28:10.235
+!MESSAGE Classpath changed for project: log4j-api-2.24.3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:28:18.568
+!MESSAGE Classpath changed for project: mysql-connector-j-9.4.0
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:28:28.584
+!MESSAGE Classpath changed for project: micrometer-observation-1.15.3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:28:35.841
+!MESSAGE Classpath changed for project: spring-web-6.2.10
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:28:41.538
+!MESSAGE Classpath changed for project: spring-beans-6.2.10
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:28:46.859
+!MESSAGE Classpath changed for project: spring-aspects-6.2.10
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:28:52.030
+!MESSAGE Classpath changed for project: spring-boot-jarmode-tools-3.5.5
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:28:56.787
+!MESSAGE Classpath changed for project: log4j-to-slf4j-2.24.3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:29:01.687
+!MESSAGE Classpath changed for project: jackson-annotations-2.19.2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:29:07.266
+!MESSAGE Classpath changed for project: spring-boot-autoconfigure-3.5.5
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:29:14.848
+!MESSAGE Classpath changed for project: spring-context-6.2.10
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:29:20.560
+!MESSAGE Classpath changed for project: spring-jcl-6.2.10
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:29:25.896
+!MESSAGE Classpath changed for project: spring-data-commons-3.5.3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:29:32.067
+!MESSAGE Classpath changed for project: HikariCP-6.3.2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:29:36.937
+!MESSAGE Classpath changed for project: spring-jdbc-6.2.10
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:29:43.006
+!MESSAGE Classpath changed for project: jackson-module-parameter-names-2.19.2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:29:49.215
+!MESSAGE Classpath changed for project: spring-orm-6.2.10
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:29:55.058
+!MESSAGE Classpath changed for project: spring-tx-6.2.10
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:30:00.561
+!MESSAGE Classpath changed for project: spring-expression-6.2.10
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:30:51.572
+!MESSAGE Classpath changed for project: spring-data-jpa-3.5.3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:30:57.358
+!MESSAGE Classpath changed for project: spring-core-6.2.10
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-09-06 03:31:04.746
+!MESSAGE Classpath changed for project: hibernate-commons-annotations-7.0.3.Final

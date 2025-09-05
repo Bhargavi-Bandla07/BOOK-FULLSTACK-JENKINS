@@ -277,3 +277,326 @@
 2025-09-06 00:32:59,027 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\BOOK-FULLSTACK\BOOKAPI-SPRINGBOOT\src\test\resources
 2025-09-06 00:32:59,027 [Worker-68: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of BOOKAPI-SPRINGBOOT
 2025-09-06 00:32:59,027 [Worker-68: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for BOOKAPI-SPRINGBOOT
+2025-09-06 01:06:45,047 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-06 01:06:45,073 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-06 01:06:45,078 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\BOOK-FULLSTACK\BOOKAPI-SPRINGBOOT\src\test\resources
+2025-09-06 01:18:15,092 [Worker-77: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-09-06 01:18:15,199 [Worker-77: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 0.00 sec, update config takes 0.00 sec 
+2025-09-06 01:19:41,357 [Worker-79: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-09-06 01:19:41,373 [Worker-79: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 0.00 sec, update config takes 0.00 sec 
+2025-09-06 01:22:22,539 [Worker-84: reload maven project] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-09-06 01:22:27,166 [Worker-83: reload maven project] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-09-06 01:22:41,186 [Worker-79: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-09-06 01:22:41,199 [Worker-79: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 0.00 sec, update config takes 0.00 sec 
+2025-09-06 01:23:29,114 [Worker-85: reload maven project] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-09-06 01:23:42,486 [Worker-81: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-09-06 01:23:42,505 [Worker-81: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 0.00 sec, update config takes 0.00 sec 
+2025-09-06 01:24:24,964 [Worker-83: reload maven project] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-09-06 01:26:19,739 [Worker-81: reload maven project] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-09-06 01:32:16,641 [Worker-88: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-09-06 01:32:16,670 [Worker-88: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 0.00 sec, update config takes 0.00 sec 
+2025-09-06 01:32:20,617 [Worker-88: reload maven project] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-09-06 01:32:31,037 [Worker-91: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-09-06 01:32:31,063 [Worker-91: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 0.00 sec, update config takes 0.00 sec 
+2025-09-06 01:34:48,726 [Worker-88: reload maven project] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-09-06 01:36:15,459 [Worker-92: reload maven project] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-09-06 01:36:27,349 [Worker-96: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-09-06 01:36:27,360 [Worker-96: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 0.00 sec, update config takes 0.00 sec 
+2025-09-06 01:39:16,421 [Worker-92: reload maven project] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-09-06 01:58:14,611 [Worker-111: reload maven project] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-09-06 01:59:08,049 [Worker-122: reload maven project] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[ERROR] Invalid packaging for parent POM com.example:bookapi:0.0.1-SNAPSHOT, must be "pom" but is "war" @ line 19, column 14
+[FATAL] The parents form a cycle: com.example:bookapi:0.0.1-SNAPSHOT -> org.springframework.boot:spring-boot-dependencies:3.5.5 -> org.springframework.boot:spring-boot-starter-parent:3.5.5 -> org.springframework.boot:spring-boot-dependencies:3.5.5 @ org.springframework.boot:spring-boot-starter-parent:3.5.5
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:943)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-09-06 01:59:19,166 [Worker-121: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-09-06 01:59:19,212 [Worker-121: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 0.00 sec, update config takes 0.00 sec 
+2025-09-06 02:01:39,333 [Worker-132: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:bookapi:0.0.1-SNAPSHOT @ C:\BOOK-FULLSTACK\BOOKAPI-SPRINGBOOT\pom.xml.
+2025-09-06 02:01:41,010 [Worker-132: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-06 02:01:41,013 [Worker-132: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-06 02:01:41,023 [Worker-132: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\BOOK-FULLSTACK\BOOKAPI-SPRINGBOOT\src\test\resources
+2025-09-06 02:01:41,024 [Worker-132: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of BOOKAPI-SPRINGBOOT
+2025-09-06 02:01:41,024 [Worker-132: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for BOOKAPI-SPRINGBOOT
+2025-09-06 02:01:41,493 [Worker-111: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-09-06 02:01:42,426 [Worker-111: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:bookapi:0.0.1-SNAPSHOT @ C:\BOOK-FULLSTACK\BOOKAPI-SPRINGBOOT\pom.xml.
+2025-09-06 02:01:43,822 [Worker-111: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /BOOKAPI-SPRINGBOOT/src/main/java
+2025-09-06 02:01:43,823 [Worker-111: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /BOOKAPI-SPRINGBOOT/src/main/resources
+2025-09-06 02:01:43,824 [Worker-111: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /BOOKAPI-SPRINGBOOT/src/main/resources
+2025-09-06 02:01:43,825 [Worker-111: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /BOOKAPI-SPRINGBOOT/src/test/java
+2025-09-06 02:01:43,826 [Worker-111: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /BOOKAPI-SPRINGBOOT/src/test/resources
+2025-09-06 02:01:46,824 [Worker-111: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for BOOKAPI-SPRINGBOOT
+2025-09-06 02:01:46,913 [Worker-111: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 2.00 sec, update config takes 2.00 sec 
+2025-09-06 02:01:47,443 [Worker-132: Building Project BOOKAPI-SPRINGBOOT] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-06 02:01:47,509 [Worker-132: Building Project BOOKAPI-SPRINGBOOT] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-06 02:01:47,520 [Worker-132: Building Project BOOKAPI-SPRINGBOOT] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\BOOK-FULLSTACK\BOOKAPI-SPRINGBOOT\src\test\resources
+2025-09-06 02:01:47,521 [Worker-132: Building Project BOOKAPI-SPRINGBOOT] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of BOOKAPI-SPRINGBOOT
+2025-09-06 02:01:47,521 [Worker-132: Building Project BOOKAPI-SPRINGBOOT] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for BOOKAPI-SPRINGBOOT
+2025-09-06 02:01:51,867 [Worker-135: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-09-06 02:01:52,565 [Worker-135: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:bookapi:0.0.1-SNAPSHOT @ C:\BOOK-FULLSTACK\BOOKAPI-SPRINGBOOT\pom.xml.
+2025-09-06 02:01:53,772 [Worker-135: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /BOOKAPI-SPRINGBOOT/src/main/java
+2025-09-06 02:01:53,773 [Worker-135: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /BOOKAPI-SPRINGBOOT/src/main/resources
+2025-09-06 02:01:53,775 [Worker-135: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /BOOKAPI-SPRINGBOOT/src/main/resources
+2025-09-06 02:01:53,776 [Worker-135: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /BOOKAPI-SPRINGBOOT/src/test/java
+2025-09-06 02:01:53,777 [Worker-135: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /BOOKAPI-SPRINGBOOT/src/test/resources
+2025-09-06 02:01:54,822 [Worker-135: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for BOOKAPI-SPRINGBOOT
+2025-09-06 02:01:54,886 [Worker-135: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 1.00 sec, update config takes 1.00 sec 
+2025-09-06 02:01:55,381 [Worker-132: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-06 02:01:55,417 [Worker-132: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-06 02:01:55,424 [Worker-132: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\BOOK-FULLSTACK\BOOKAPI-SPRINGBOOT\src\test\resources
+2025-09-06 02:01:55,424 [Worker-132: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of BOOKAPI-SPRINGBOOT
+2025-09-06 02:01:55,424 [Worker-132: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for BOOKAPI-SPRINGBOOT
+2025-09-06 03:07:18,788 [Worker-149: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-06 03:07:18,816 [Worker-149: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-06 03:07:18,822 [Worker-149: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\BOOK-FULLSTACK\BOOKAPI-SPRINGBOOT\src\test\resources
+2025-09-06 03:14:58,350 [Worker-152: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-06 03:14:58,373 [Worker-152: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-06 03:14:58,379 [Worker-152: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\BOOK-FULLSTACK\BOOKAPI-SPRINGBOOT\src\test\resources
+2025-09-06 03:14:58,380 [Worker-152: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of BOOKAPI-SPRINGBOOT
+2025-09-06 03:14:58,380 [Worker-152: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for BOOKAPI-SPRINGBOOT
+2025-09-06 03:15:05,621 [Worker-145: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-06 03:15:05,650 [Worker-145: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-06 03:15:05,652 [Worker-145: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\BOOK-FULLSTACK\BOOKAPI-SPRINGBOOT\src\test\resources
+2025-09-06 03:15:25,606 [Worker-156: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-06 03:15:25,617 [Worker-156: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-06 03:15:25,620 [Worker-156: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\BOOK-FULLSTACK\BOOKAPI-SPRINGBOOT\src\test\resources
+2025-09-06 03:24:31,098 [Worker-164: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-09-06 03:24:31,709 [Worker-164: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:bookapi:0.0.1-SNAPSHOT @ C:\BOOK-FULLSTACK\BOOKAPI-SPRINGBOOT\pom.xml.
+2025-09-06 03:24:32,312 [Worker-164: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /BOOKAPI-SPRINGBOOT/src/main/java
+2025-09-06 03:24:32,312 [Worker-164: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /BOOKAPI-SPRINGBOOT/src/main/resources
+2025-09-06 03:24:32,313 [Worker-164: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /BOOKAPI-SPRINGBOOT/src/main/resources
+2025-09-06 03:24:32,313 [Worker-164: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /BOOKAPI-SPRINGBOOT/src/test/java
+2025-09-06 03:24:32,313 [Worker-164: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /BOOKAPI-SPRINGBOOT/src/test/resources
+2025-09-06 03:24:32,645 [Worker-164: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for BOOKAPI-SPRINGBOOT
+2025-09-06 03:24:32,657 [Worker-164: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 1.00 sec, update config takes 0.00 sec 
+2025-09-06 03:24:33,005 [Worker-163: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-06 03:24:33,032 [Worker-163: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-06 03:24:33,038 [Worker-163: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\BOOK-FULLSTACK\BOOKAPI-SPRINGBOOT\src\test\resources
+2025-09-06 03:24:33,038 [Worker-163: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of BOOKAPI-SPRINGBOOT
+2025-09-06 03:24:33,038 [Worker-163: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for BOOKAPI-SPRINGBOOT
