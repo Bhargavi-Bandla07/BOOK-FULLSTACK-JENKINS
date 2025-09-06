@@ -13,7 +13,12 @@ public class BookController {
     public BookController(BookRepository repo) {
         this.repo = repo;
     }
-
+    
+    @GetMapping("/")
+    public String home1() 
+    {
+        return "Jenkins Full Stack Deployment Practice";
+    }
     @GetMapping("/all")
     public List<Book> getAll() {
         return repo.findAll();

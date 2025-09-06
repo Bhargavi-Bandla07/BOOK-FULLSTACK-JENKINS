@@ -16,7 +16,7 @@ function App() {
       .then(data => setBooks(data || []))
       .catch(err => {
         console.error("Could not load books:", err);
-        setBooks([]);
+        setBooks([]);e
       });
   }, []);
 
