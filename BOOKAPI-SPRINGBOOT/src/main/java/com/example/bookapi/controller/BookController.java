@@ -7,6 +7,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/bookapi")
+@CrossOrigin(origins = "*") 
 public class BookController {
     private final BookRepository repo;
 
