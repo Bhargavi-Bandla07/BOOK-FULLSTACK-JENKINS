@@ -5,6 +5,7 @@ function App() {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [price, setPrice] = useState("");
+  const [editId, setEditId] = useState(null);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -20,28 +21,69 @@ function App() {
       });
   }, []);
 
-  const addBook = () => {
+  // Add or Update book
+  const saveBook = () => {
     const body = { title, author, price: Number(price) };
     setLoading(true);
-    fetch("/bookapi/add", {
-      method: "POST",
+
+    const url = editId ? `/bookapi/update/${editId}` : "/bookapi/add";
+    const method = editId ? "PUT" : "POST";
+
+    fetch(url, {
+      method,
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body)
     })
       .then(res => {
         setLoading(false);
-        if (!res.ok) throw new Error("Add failed");
+        if (!res.ok) throw new Error("Save failed");
         return res.json();
       })
-      .then(newBook => {
-        setBooks(prev => [...prev, newBook]);
-        setTitle(""); setAuthor(""); setPrice("");
+      .then(savedBook => {
+        if (editId) {
+          // update existing
+          setBooks(prev => prev.map(b => (b.id === editId ? savedBook : b)));
+        } else {
+          // add new
+          setBooks(prev => [...prev, savedBook]);
+        }
+        resetForm();
       })
       .catch(err => {
         setLoading(false);
-        console.error("Add book error:", err);
-        alert("Failed to add book. See console.");
+        console.error("Save book error:", err);
+        alert("Failed to save book. See console.");
       });
+  };
+
+  // Delete book
+  const deleteBook = (id) => {
+    fetch(`/bookapi/delete/${id}`, { method: "DELETE" })
+      .then(res => {
+        if (!res.ok) throw new Error("Delete failed");
+        return res.text();
+      })
+      .then(() => setBooks(prev => prev.filter(b => b.id !== id)))
+      .catch(err => {
+        console.error("Delete error:", err);
+        alert("Failed to delete book");
+      });
+  };
+
+  // Start editing
+  const startEdit = (book) => {
+    setEditId(book.id);
+    setTitle(book.title);
+    setAuthor(book.author);
+    setPrice(book.price);
+  };
+
+  // Reset form
+  const resetForm = () => {
+    setEditId(null);
+    setTitle("");
+    setAuthor("");
+    setPrice("");
   };
 
   return (
@@ -52,13 +94,20 @@ function App() {
         <input placeholder="Title" value={title} onChange={e => setTitle(e.target.value)} />
         <input placeholder="Author" value={author} onChange={e => setAuthor(e.target.value)} style={{ marginLeft: 8 }} />
         <input placeholder="Price" value={price} onChange={e => setPrice(e.target.value)} style={{ marginLeft: 8, width: 90 }} />
-        <button onClick={addBook} style={{ marginLeft: 8 }} disabled={loading}>{loading ? "Adding..." : "Add Book"}</button>
+        <button onClick={saveBook} style={{ marginLeft: 8 }} disabled={loading}>
+          {loading ? "Saving..." : editId ? "Update Book" : "Add Book"}
+        </button>
+        {editId && <button onClick={resetForm} style={{ marginLeft: 8 }}>Cancel</button>}
       </div>
 
       <h2>All Books</h2>
       <ul>
         {books.length === 0 ? <li>No books yet</li> : books.map(b => (
-          <li key={b.id}>{b.title} - {b.author} - ${b.price}</li>
+          <li key={b.id}>
+            {b.title} - {b.author} - ${b.price}
+            <button onClick={() => startEdit(b)} style={{ marginLeft: 8 }}>Edit</button>
+            <button onClick={() => deleteBook(b.id)} style={{ marginLeft: 8 }}>Delete</button>
+          </li>
         ))}
       </ul>
     </div>
