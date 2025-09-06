@@ -1,2 +1,7 @@
 INDEX VERSION 1.4+C:\BOOK-FULLSTACK\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2938194832.index
+3756976079.index
+2835708460.index
 2838473449.index
+852170668.index
+345636911.index

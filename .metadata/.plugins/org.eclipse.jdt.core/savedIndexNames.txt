@@ -1,7 +1,6 @@
 INDEX VERSION 1.134+C:\BOOK-FULLSTACK\.metadata\.plugins\org.eclipse.jdt.core
 3439086110.index
 767108858.index
-2838473449.index
 1315153952.index
 3576229000.index
 4172737017.index

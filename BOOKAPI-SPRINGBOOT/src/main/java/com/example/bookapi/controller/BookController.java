@@ -1,9 +1,81 @@
+//package com.example.bookapi.controller;
+//
+//import com.example.bookapi.model.Book;
+//import com.example.bookapi.repository.BookRepository;
+//import org.springframework.web.bind.annotation.*;
+//import java.util.List;
+//
+//@RestController
+//@RequestMapping("/bookapi")
+//@CrossOrigin(origins = "*") 
+//public class BookController {
+//    private final BookRepository repo;
+//
+//    public BookController(BookRepository repo) {
+//        this.repo = repo;
+//    }
+//    
+//    @GetMapping("/")
+//    public String home1() 
+//    {
+//        return "Jenkins Full Stack Deployment Practice";
+//    }
+//    @GetMapping("/all")
+//    public List<Book> getAll() {
+//        return repo.findAll();
+//    }
+//
+//    @PostMapping("/add")
+//    public Book addBook(@RequestBody Book book) {
+//        return repo.save(book);
+//    }
+//}
+
+
+// src/main/java/com/example/bookapi/controller/BookController.java
+//package com.example.bookapi.controller;
+//
+//import com.example.bookapi.model.Book;
+//import com.example.bookapi.repository.BookRepository;
+//import org.springframework.web.bind.annotation.*;
+//import java.util.List;
+//
+//@RestController
+//@RequestMapping("/bookapi")
+//@CrossOrigin(origins = "*")
+//public class BookController {
+//    private final BookRepository repo;
+//
+//    public BookController(BookRepository repo) {
+//        this.repo = repo;
+//    }
+//
+//    @GetMapping("/")
+//    public String home1() {
+//        return "Jenkins Full Stack Deployment Practice";
+//    }
+//
+//    @GetMapping("/all")
+//    public List<Book> getAll() {
+//        return repo.findAll();
+//    }
+//
+//    @PostMapping("/add")
+//    public Book addBook(@RequestBody Book book) {
+//        return repo.save(book);
+//    }
+//}
+
+
+
+
 package com.example.bookapi.controller;
 
 import com.example.bookapi.model.Book;
 import com.example.bookapi.repository.BookRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -11,58 +83,52 @@ import java.util.Optional;
 @RequestMapping("/bookapi")
 @CrossOrigin(origins = "*")
 public class BookController {
-
     private final BookRepository repo;
 
     public BookController(BookRepository repo) {
         this.repo = repo;
     }
 
-    // Home endpoint
     @GetMapping("/")
     public String home1() {
         return "Jenkins Full Stack Deployment Practice";
     }
 
-    // Get all books
     @GetMapping("/all")
     public List<Book> getAll() {
         return repo.findAll();
     }
 
-    // Add new book
     @PostMapping("/add")
     public Book addBook(@RequestBody Book book) {
         return repo.save(book);
     }
 
-    // Get book by id
-    @GetMapping("/{id}")
-    public ResponseEntity<Book> getBookById(@PathVariable Long id) {
-        Optional<Book> book = repo.findById(id);
-        return book.map(ResponseEntity::ok)
-                   .orElse(ResponseEntity.notFound().build());
-    }
-
-    // Update book
+    // UPDATE a book by id
     @PutMapping("/update/{id}")
-    public ResponseEntity<Book> updateBook(@PathVariable Long id, @RequestBody Book updatedBook) {
-        return repo.findById(id).map(existing -> {
-            existing.setTitle(updatedBook.getTitle());
-            existing.setAuthor(updatedBook.getAuthor());
-            existing.setPrice(updatedBook.getPrice());
-            return ResponseEntity.ok(repo.save(existing));
-        }).orElse(ResponseEntity.notFound().build());
-    }
+    public ResponseEntity<Book> updateBook(
+            @PathVariable("id") Long id,
+            @RequestBody Book updated) {
 
-    // Delete book
-    @DeleteMapping("/delete/{id}")
-    public ResponseEntity<String> deleteBook(@PathVariable Long id) {
-        if (repo.existsById(id)) {
-            repo.deleteById(id);
-            return ResponseEntity.ok("Book deleted successfully");
-        } else {
+        Optional<Book> opt = repo.findById(id);
+        if (opt.isEmpty()) {
             return ResponseEntity.notFound().build();
         }
+        Book existing = opt.get();
+        existing.setTitle(updated.getTitle());
+        existing.setAuthor(updated.getAuthor());
+        existing.setPrice(updated.getPrice());
+        Book saved = repo.save(existing);
+        return ResponseEntity.ok(saved);
+    }
+
+    // DELETE a book by id
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<Void> deleteBook(@PathVariable("id") Long id) {
+        if (!repo.existsById(id)) {
+            return ResponseEntity.notFound().build();
+        }
+        repo.deleteById(id);
+        return ResponseEntity.ok().build();
     }
 }
