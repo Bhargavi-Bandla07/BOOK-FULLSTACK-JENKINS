@@ -622,3 +622,5 @@ org.apache.maven.project.ProjectBuildingException: Some problems were encountere
 2025-09-06 09:29:05,638 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2025-09-06 09:29:05,640 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\BOOK-FULLSTACK\BOOKAPI-SPRINGBOOT\src\test\resources
 2025-09-06 09:31:09,053 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-09-06 09:31:09,064 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-09-06 09:31:09,067 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\BOOK-FULLSTACK\BOOKAPI-SPRINGBOOT\src\test\resources
